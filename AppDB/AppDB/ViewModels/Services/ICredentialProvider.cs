@@ -6,5 +6,6 @@ namespace AppDB.ViewModels.Services
 {
     interface ICredentialProvider
     {
+        //var
     }
 }
