@@ -27,6 +27,5 @@ namespace AppDB.Models
         }
 
     }
-    public class CrendentialsProvider : ICredentialsProvider {
-    }
+
 }

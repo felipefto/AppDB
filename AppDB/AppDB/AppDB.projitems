@@ -18,6 +18,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Constants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Token.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Services\ICredentialProvider.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
       <SubType>Code</SubType>
