@@ -16,21 +16,9 @@ namespace AppDB.Views
 		public LoginPage ()
 		{
 			InitializeComponent ();
+            this.BindingContext = new ViewModels.Login();
 		}
-
-        void SignInProcedure(object sender, EventArgs e) {
-
-            User user = new User(Entry_Username.Text, Entry_Password.Text);
-            if (user.CheckInformation())
-            {
-                DisplayAlert("Login", "Login Success", "Ok");
-            }
-            else
-            {
-                DisplayAlert("Login", "Login not Corret, empty username or password", "Ok");
-            }
-        }
-
+        
 
     }
 }

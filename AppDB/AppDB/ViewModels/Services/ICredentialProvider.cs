@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace AppDB.ViewModels.Services
 {
-    interface ICredentialProvider
+    public interface ICredentialProvider
     {
-        //var
+        Models.User Login(string userName, string password);
+        Task Register(string email, string userName, string password);
+
     }
 }

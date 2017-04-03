@@ -18,11 +18,17 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\Constants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Token.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Base.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Login.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Main.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Services\ICredentialProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Services\IMessageService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CredentialProvider.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Services\MessageService.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">

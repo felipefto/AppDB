@@ -11,9 +11,12 @@ namespace AppDB
 	{
 		public App ()
 		{
+            DependencyService.Register<ViewModels.Services.ICredentialProvider, Views.CredentialProvider>();
+            DependencyService.Register<ViewModels.Services.IMessageService, Views.Services.MessageService>();
+
 			InitializeComponent();
 
-			MainPage = new AppDB.Views.LoginPage();
+            MainPage = new NavigationPage(new Views.LoginPage());
 		}
 
 		protected override void OnStart ()

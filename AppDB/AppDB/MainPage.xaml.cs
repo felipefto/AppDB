@@ -12,6 +12,7 @@ namespace AppDB
 		public MainPage()
 		{
 			InitializeComponent();
+            this.BindingContext = new ViewModels.Main();
 		}
 	}
 }
