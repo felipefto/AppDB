@@ -7,6 +7,7 @@ using Microsoft.Azure.Mobile.Analytics;
 using Microsoft.Azure.Mobile.Crashes;
 
 using Xamarin.Forms;
+using System.Diagnostics;
 
 namespace AppDB
 {
@@ -28,16 +29,20 @@ namespace AppDB
                    "android={53533186-c154-42c3-ba5e-5d6362ca539d}",
                    typeof(Analytics), typeof(Crashes));
             // Handle when your app starts
+            Debug.WriteLine("OnStart");
         }
 
 		protected override void OnSleep ()
 		{
-			// Handle when your app sleeps
-		}
+            // Handle when your app sleeps
+
+            Debug.WriteLine("OnSleep");
+        }
 
 		protected override void OnResume ()
 		{
-			// Handle when your app resumes
-		}
+            // Handle when your app resumes
+            Debug.WriteLine("OnResume");
+        }
 	}
 }
