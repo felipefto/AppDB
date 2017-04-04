@@ -25,8 +25,7 @@ namespace AppDB
 
 		protected override void OnStart ()
 		{
-            MobileCenter.Start("ios=f7f2bc49-9200-48b2-987c-dbc8824de14b;" +
-                   "android=74f7eb3a-54f6-4d29-9c2c-0cc9eb676259",
+            MobileCenter.Start("android=74f7eb3a-54f6-4d29-9c2c-0cc9eb676259;ios=f7f2bc49-9200-48b2-987c-dbc8824de14b",
                    typeof(Analytics), typeof(Crashes));
             // Handle when your app starts
 
