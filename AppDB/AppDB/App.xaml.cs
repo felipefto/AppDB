@@ -26,16 +26,18 @@ namespace AppDB
 		protected override void OnStart ()
 		{
             MobileCenter.Start("ios=f7f2bc49-9200-48b2-987c-dbc8824de14b;" +
-                   "android={53533186-c154-42c3-ba5e-5d6362ca539d}",
+                   "android={74f7eb3a-54f6-4d29-9c2c-0cc9eb676259}",
                    typeof(Analytics), typeof(Crashes));
             // Handle when your app starts
+
+            Analytics.Enabled = true;
             Debug.WriteLine("OnStart");
         }
 
 		protected override void OnSleep ()
 		{
             // Handle when your app sleeps
-
+            Analytics.TrackEvent("On Sleep", new Dictionary<string, string> { { "Category", "Music" }, { "FileName", "favorite.avi" } });
             Debug.WriteLine("OnSleep");
         }
 
